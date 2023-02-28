@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-terciaria: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("/Imagem/Background.png"); /* Conteudo decorativo que não irá impactar o usuário (a leitura da pagina) */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-primaria);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
+}
