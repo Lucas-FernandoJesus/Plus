@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-:root{
+:root {
     --cor-primaria: #FFFFFF;
     --cor-secundaria: #C0C0C0;
     --cor-terciaria: #167BF7;
@@ -13,7 +15,7 @@
     --fonte-principal: 'Inter';
 }
 
-body{
+body {
     background-color: var(--cor-fundo);
     color: var(--cor-primaria);
     font-family: var(--fonte-principal);
@@ -21,35 +23,35 @@ body{
     font-weight: 400;
 }
 
-.container__box{
+.container__box {
     margin: 0 6em;
 }
 
-.principal{
-    background-image: url("/Imagem/Background.png"); /* Conteudo decorativo que não irá impactar o usuário (a leitura da pagina) */
+.principal {
+    background-image: url("/Imagem/Background.png");
+    /* Conteudo decorativo que não irá impactar o usuário (a leitura da pagina) */
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
     text-align: center;
 }
 
-.container__titulo{
+.container__titulo {
     font-size: 28px;
     font-weight: 700;
 }
 
-.container__imagem{
+.container__imagem {
     margin: 1em 0 2em 0;
 }
 
-.container{
+.container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.container__botao{
-    text-decoration: none;
+.container__botao {
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     border-radius: 5px;
@@ -58,30 +60,30 @@ body{
     margin-bottom: 1em;
 }
 
-.botao__secundario{
+.botao__secundario {
     background-color: transparent;
     border: 2px solid var(--cor-primaria);
 }
 
-.container__aviso{
+.container__aviso {
     font-size: 12px;
     color: var(--cor-secundaria);
 }
 
-.imagem__secundaria{
+.imagem__secundaria {
     width: 80%;
 }
 
-.secundario{
+.secundario {
     align-items: center;
     margin: 0.1em;
 }
 
-.container__descricao{
+.container__descricao {
     padding: 2em;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     font-size: 3rem;
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
@@ -89,13 +91,70 @@ body{
     font-weight: 700;
 }
 
-.descricao__texto{
+.descricao__texto {
     font-size: 1rem;
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
 }
 
-.secundario__botao{
+.secundario__botao {
     display: inline-block;
     margin-top: 0.1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.rodape__logo {
+    text-align: center;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+    gap: 1rem;
+}
+
+.lista__link{
+    align-items: center;
+    font-size: 16px;
+}
+
+a{
+    color: var(--cor-primaria);
+    font-size: 16px;
+}
+
+.lista__texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--cor-primaria);
+    font-size: 14px;
+    padding: 1.5rem;
 }
