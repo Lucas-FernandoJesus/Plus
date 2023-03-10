@@ -150,6 +150,10 @@ a{
     font-size: 16px;
 }
 
+.lista__link a:hover{
+    color: var(--cor-terciaria);
+}
+
 .lista__texto {
     display: flex;
     flex-direction: row;
@@ -157,4 +161,31 @@ a{
     color: var(--cor-primaria);
     font-size: 14px;
     padding: 1.5rem;
+}
+
+
+@media screen and (max-width:768px){
+    .container{
+        display: block;
+        background-image: none;
+    }
+    .container__imagem{
+        width: 50vw;
+    }
+    .container__box{
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin: 0;
+        text-align: center;
+    }
+    .imagem__secundaria{
+        width: 50vw;
+    }
+    .dispositivos__lista{
+        display:block;
+    }
+    .rodape__lista{
+        display: block;
+    }
 }
